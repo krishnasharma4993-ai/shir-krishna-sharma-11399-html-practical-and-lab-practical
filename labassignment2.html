@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Mobile Store</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- INTERNAL CSS -->
+    <style>
+        /* Universal selector */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Element selector */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            line-height: 1.6;
+        }
+
+        /* Header styling */
+        header {
+            background-color: #1f2933;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        /* Navigation */
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Section styling */
+        section {
+            background-color: white;
+            margin: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        /* Product layout using flexbox */
+        .products {
+            display: flex;
+            gap: 20px;
+        }
+
+        .product {
+            flex: 1;
+            border: 1px solid #ccc;
+            padding: 15px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .product:hover {
+            background-color: #f9f9f9;
+        }
+
+        /* Table styling */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+
+        th, td {
+            border: 1px solid #333;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #1f2933;
+            color: white;
+        }
+
+        /* Form styling */
+        form {
+            max-width: 400px;
+        }
+
+        input, textarea, button {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+        }
+
+        button {
+            background-color: #1f2933;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #374151;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1f2933;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 700px) {
+            .products {
+                flex-direction: column;
+            }
+
+            nav ul {
+                flex-direction: column;
+            }
+
+            nav ul li {
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Smart Mobile Store</h1>
+    <p>Your local mobile shopping destination</p>
+
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#mobiles">Mobiles</a></li>
+            <li><a href="#prices">Prices</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="about">
+    <h2>About Us</h2>
+    <p>
+        Smart Mobile Store offers the latest smartphones and accessories.
+        We provide genuine products, best prices, and excellent service.
+    </p>
+</section>
+
+<section id="mobiles">
+    <h2>Popular Mobiles</h2>
+
+    <div class="products">
+        <div class="product">
+            <h3>Galaxy S23</h3>
+            <p>Samsung flagship phone</p>
+        </div>
+
+        <div class="product">
+            <h3>iPhone 14</h3>
+            <p>Apple premium smartphone</p>
+        </div>
+
+        <div class="product">
+            <h3>OnePlus 11</h3>
+            <p>Fast and smooth performance</p>
+        </div>
+    </div>
+</section>
+
+<section id="prices">
+    <h2>Price List</h2>
+
+    <table>
+        <tr>
+            <th>Model</th>
+            <th>Brand</th>
+            <th>Price</th>
+        </tr>
+        <tr>
+            <td>Galaxy S23</td>
+            <td>Samsung</td>
+            <td>₹75,000</td>
+        </tr>
+        <tr>
+            <td>iPhone 14</td>
+            <td>Apple</td>
+            <td>₹80,000</td>
+        </tr>
+        <tr>
+            <td>OnePlus 11</td>
+            <td>OnePlus</td>
+            <td>₹60,000</td>
+        </tr>
+    </table>
+</section>
+
+<section id="contact">
+    <h2>Contact Us</h2>
+
+    <form>
+        <label>Name</label>
+        <input type="text">
+
+        <label>Email</label>
+        <input type="email">
+
+        <label>Message</label>
+        <textarea rows="4"></textarea>
+
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 Smart Mobile Store</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>shri Krishna Sharma | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            color: #333;
+        }
+
+        header {
+            background-color: #1e293b;
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 5px;
+        }
+
+        nav {
+            background-color: #0f172a;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 40px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        h2 {
+            color: #1e293b;
+            margin-bottom: 15px;
+        }
+
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 6px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            margin-bottom: 25px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        footer {
+            background-color: #1e293b;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        button {
+            background-color: #1e293b;
+            color: white;
+            padding: 10px 18px;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        button:hover {
+            background-color: #0f172a;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>shri Krishna Sharma</h1>
+    <p>B.Tech Computer Science & Engineering Student</p>
+    <p>Rungta Skills University, Bhilai (In association with Google)</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#skills">Skills</a>
+    <a href="#certifications">Certifications</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+    <div class="card">
+        <h2>About Me</h2>
+        <p>
+            I am a B.Tech Computer Science and Engineering student at Rungta Skills University, Bhilai.
+            I am passionate about programming and web development. Currently, I am building my skills
+            in C programming, HTML, CSS, and JavaScript, and working on real-world portfolio projects.
+        </p>
+    </div>
+</section>
+
+<section id="education">
+    <div class="card">
+        <h2>Education</h2>
+        <ul>
+            <li>B.Tech in Computer Science & Engineering – Rungta Skills University, Bhilai</li>
+            <li>University association with Google</li>
+        </ul>
+    </div>
+</section>
+
+<section id="skills">
+    <div class="card">
+        <h2>Technical Skills</h2>
+        <ul>
+            <li>C Programming</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+    </div>
+</section>
+
+<section id="certifications">
+    <div class="card">
+        <h2>Certifications</h2>
+        <ul>
+            <li>C Programming – University of Michigan (In Progress)</li>
+            <li>Introduction to HTML, CSS & JavaScript – IBM (Coursera)</li>
+        </ul>
+    </div>
+</section>
+
+<section id="contact">
+    <div class="card">
+        <h2>Contact Me</h2>
+        <p><strong>Email:</strong> krishnasharma4993@gmail.com</p>
+        <p><strong>Phone:</strong> 9244681605</p>
+
+        <button onclick="showMessage()">Click Me</button>
+        <p id="msg"></p>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026  shri Krishna Sharma | Portfolio Website</p>
+</footer>
+
+<script>
+    function showMessage() {
+        document.getElementById("msg").innerText =
+            "Thank you for visiting my portfolio!";
+    }
+</script>
+
+</body>
+</html>

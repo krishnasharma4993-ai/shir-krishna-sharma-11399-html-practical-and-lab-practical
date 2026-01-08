@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Responsive Page</title>
+
+<style>
+/* Default (Mobile) */
+body {
+    background: rgb(196, 14, 14);
+    margin: 0;
+    font-family: Arial;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+/* Tablets */
+@media (min-width: 600px) {
+    body { background: lightblue; }
+    .container { width: 80%; }
+}
+
+/* Laptops */
+@media (min-width: 992px) {
+    body { background: red; }
+    .container { width: 50%; }
+}
+</style>
+</head>
+
+<body>
+<div class="container">
+    <h2>Responsive Web Page</h2>
+    <p>This box adjusts on mobile, tablet, and laptop screens.</p>
+</div>
+</body>
+</html>
